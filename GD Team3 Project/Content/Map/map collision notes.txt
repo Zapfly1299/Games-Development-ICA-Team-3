@@ -1,0 +1,1 @@
+Open each of the buildings in unreal and set collision complexity to "Use complex collisions as simple"
