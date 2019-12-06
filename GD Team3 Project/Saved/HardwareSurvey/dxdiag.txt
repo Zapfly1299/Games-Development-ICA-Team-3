@@ -1,7 +1,7 @@
 ------------------
 System Information
 ------------------
-      Time of this report: 10/28/2019, 10:45:19
+      Time of this report: 11/18/2019, 10:04:58
              Machine name: TU39422
                Machine Id: {2C32EABD-D2F1-4591-9C01-E3D73DF603A6}
          Operating System: Windows 10 Enterprise 64-bit (10.0, Build 17763) (17763.rs5_release.180914-1434)
@@ -12,7 +12,7 @@ System Information
                 Processor: Intel(R) Core(TM) i7-7800X CPU @ 3.50GHz (12 CPUs), ~3.5GHz
                    Memory: 32768MB RAM
       Available OS Memory: 32486MB RAM
-                Page File: 8400MB used, 28949MB available
+                Page File: 7025MB used, 30324MB available
               Windows Dir: C:\WINDOWS
           DirectX Version: DirectX 12
       DX Setup Parameters: Not found
@@ -424,13 +424,13 @@ PS/2 Devices
 Disk & DVD/CD-ROM Drives
 ------------------------
       Drive: C:
- Free Space: 173.2 GB
+ Free Space: 168.4 GB
 Total Space: 487.4 GB
 File System: NTFS
       Model: MTFDDAK512TBN-1AR1ZABHA
 
       Drive: D:
- Free Space: 1886.5 GB
+ Free Space: 1879.5 GB
 Total Space: 1907.7 GB
 File System: NTFS
       Model: TOSHIBA DT01ACA200
@@ -1272,9 +1272,9 @@ Video Decoders:
   MJPEG Decoder MFT, {CB17E772-E1CC-4633-8450-5617AF577905}, 0x1, mfmjpegdec.dll, 10.00.17763.0001
   Mpeg43 Decoder MFT, CLSID_CMpeg43DecMediaObject, 0x1, mp43decd.dll, 10.00.17763.0001
   Mpeg4 Decoder MFT, CLSID_CMpeg4DecMediaObject, 0x1, mpg4decd.dll, 10.00.17763.0001
-  WebpImageExtension
-  HEIFImageExtension
   VP9VideoExtensionDecoder
+  HEIFImageExtension
+  WebpImageExtension
 Video Encoders:
   NVIDIA H.264 Encoder MFT, {60F44560-5A20-4857-BFEF-D29773CB8040}, 0x4, 8, nvEncMFTH264x.dll, 26.21.0014.3170
   NVIDIA HEVC Encoder MFT, {966F107C-8EA2-425D-B822-E4A71BEF01D7}, 0x4, 8, nvEncMFThevcx.dll, 26.21.0014.3170
@@ -1283,8 +1283,8 @@ Video Encoders:
   H263 Encoder MFT, {BC47FCFE-98A0-4F27-BB07-698AF24F2B38}, 0x1, mfh263enc.dll, 10.00.17763.0001
   WMVideo9 Encoder MFT, CLSID_CWMV9EncMediaObject, 0x1, wmvencod.dll, 10.00.17763.0001
   Microsoft MPEG-2 Video Encoder MFT, {E6335F02-80B7-4DC4-ADFA-DFE7210D20D5}, 0x2, msmpeg2enc.dll, 10.00.17763.0001
-  HEIFImageExtension
   VP9VideoExtensionEncoder
+  HEIFImageExtension
 Video Effects:
   Frame Rate Converter, CLSID_CFrameRateConvertDmo, 0x1, mfvdsp.dll, 10.00.17763.0001
   Resizer MFT, CLSID_CResizerDMO, 0x1, vidreszr.dll, 10.00.17763.0001
@@ -1615,26 +1615,7 @@ P10:
 
 
 +++ WER1 +++:
-Fault bucket 2289243531223852673, type 5
-Event Name: AppHangB1
-Response: Not available
-Cab Id: 0
-
-Problem signature:
-P1: ZBrush.exe
-P2: 2019.1.2.0
-P3: 5ceede5d
-P4: 6218
-P5: 134217728
-P6: 
-P7: 
-P8: 
-P9: 
-P10: 
-
-
-+++ WER2 +++:
-Fault bucket 1407747373434718985, type 4
+Fault bucket 1734593200912282965, type 4
 Event Name: APPCRASH
 Response: Not available
 Cab Id: 0
@@ -1647,24 +1628,43 @@ P4: PGHook.dll
 P5: 5.2.21.0
 P6: 5b76d269
 P7: c00000fd
-P8: 0000000000090066
+P8: 0000000000092c5a
+P9: 
+P10: 
+
+
++++ WER2 +++:
+Fault bucket 1337438858156895391, type 5
+Event Name: StoreAgentInstallFailure1
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: Update;ScanForUpdatesForUser
+P2: 80246007
+P3: 17763
+P4: 805
+P5: Windows.Desktop
+P6: P
+P7: 
+P8: 
 P9: 
 P10: 
 
 
 +++ WER3 +++:
-Fault bucket 2183209414868304996, type 5
-Event Name: RADAR_PRE_LEAK_64
+Fault bucket , type 0
+Event Name: StoreAgentInstallFailure1
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: maya.exe
-P2: 19.1.0.8580
-P3: 10.0.17763.2.0.0
-P4: 
-P5: 
-P6: 
+P1: Update;ScanForUpdatesForUser
+P2: 80246007
+P3: 17763
+P4: 805
+P5: Windows.Desktop
+P6: P
 P7: 
 P8: 
 P9: 
@@ -1672,37 +1672,37 @@ P10:
 
 
 +++ WER4 +++:
-Fault bucket 1759852017390736236, type 5
-Event Name: RADAR_PRE_LEAK_64
+Fault bucket 2074478982603979121, type 4
+Event Name: APPCRASH
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: Substance Painter.exe
-P2: 2019.1.2.0
-P3: 10.0.17763.2.0.0
-P4: 
-P5: 
-P6: 
-P7: 
-P8: 
+P1: svchost.exe_AppReadiness
+P2: 10.0.17763.1
+P3: b900eeff
+P4: ntdll.dll
+P5: 10.0.17763.802
+P6: 125ac1e8
+P7: c00000fd
+P8: 000000000000ee6d
 P9: 
 P10: 
 
 
 +++ WER5 +++:
-Fault bucket 1346449762928191086, type 5
-Event Name: WindowsWcpOtherFailure3
+Fault bucket , type 0
+Event Name: POFContextAppCrash
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: 10.0.17763.793:1
-P2: wcp\componentstore\storelayout.cpp
-P3: ComponentStore::CRawStoreLayout::OpenCanonicalDataKey
-P4: 4979
-P5: c015001a
-P6: 0x90db4a5e
+P1: Microsoft.Windows.Photos_2019.19071.17920.0_x64__8wekyb3d8bbwe
+P2: praid:App
+P3: 2019.19071.17920.0
+P4: 0x802b000a
+P5: 38ef662e47b3971c561da11a2dde2855
+P6: 
 P7: 
 P8: 
 P9: 
@@ -1711,17 +1711,17 @@ P10:
 
 +++ WER6 +++:
 Fault bucket , type 0
-Event Name: WindowsWcpOtherFailure3
+Event Name: POFContextAppCrash
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: 10.0.17763.793:1
-P2: wcp\componentstore\storelayout.cpp
-P3: ComponentStore::CRawStoreLayout::OpenCanonicalDataKey
-P4: 4979
-P5: c015001a
-P6: 0x90db4a5e
+P1: Microsoft.Windows.Photos_2019.19071.17920.0_x64__8wekyb3d8bbwe
+P2: praid:App
+P3: 2019.19071.17920.0
+P4: 0x802b000a
+P5: 38ef662e47b3971c561da11a2dde2855
+P6: 
 P7: 
 P8: 
 P9: 
@@ -1730,17 +1730,17 @@ P10:
 
 +++ WER7 +++:
 Fault bucket , type 0
-Event Name: WindowsWcpOtherFailure3
+Event Name: POFContextAppCrash
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: 10.0.17763.793:1
-P2: wcp\componentstore\storelayout.cpp
-P3: ComponentStore::CRawStoreLayout::OpenCanonicalDataKey
-P4: 4979
-P5: c015001a
-P6: 0x90db4a5e
+P1: Microsoft.YourPhone_1.19101.469.0_x64__8wekyb3d8bbwe
+P2: praid:App
+P3: 1.19101.469.0
+P4: 0x802b000a
+P5: 1dd19d45cbeb98622209ce09048d290f
+P6: 
 P7: 
 P8: 
 P9: 
@@ -1754,11 +1754,11 @@ Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: Microsoft.Windows.Photos_2019.19071.17920.0_x64__8wekyb3d8bbwe
+P1: Microsoft.YourPhone_1.19101.469.0_x64__8wekyb3d8bbwe
 P2: praid:App
-P3: 2019.19071.17920.0
+P3: 1.19101.469.0
 P4: 0x802b000a
-P5: 29c2666a2f8bbefdba8459df15702c72
+P5: 1dd19d45cbeb98622209ce09048d290f
 P6: 
 P7: 
 P8: 
@@ -1767,21 +1767,21 @@ P10:
 
 
 +++ WER9 +++:
-Fault bucket , type 0
-Event Name: POFContextAppCrash
+Fault bucket 1571254116021224661, type 5
+Event Name: MoAppCrash
 Response: Not available
 Cab Id: 0
 
 Problem signature:
-P1: Microsoft.Windows.Photos_2019.19071.17920.0_x64__8wekyb3d8bbwe
+P1: Microsoft.YourPhone_1.19101.469.0_x64__8wekyb3d8bbwe
 P2: praid:App
-P3: 2019.19071.17920.0
-P4: 0x802b000a
-P5: 29c2666a2f8bbefdba8459df15702c72
-P6: 
-P7: 
-P8: 
-P9: 
+P3: 1.19101.469.0
+P4: 5db09f4b
+P5: combase.dll
+P6: 10.0.17763.737
+P7: c366780e
+P8: 802b000a
+P9: 000000000003629a
 P10: 
 
 
